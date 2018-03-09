@@ -1,0 +1,114 @@
+.required-field::after {
+	font-size: large;
+    content: "*";
+    color: red;
+}
+input.error-field {
+	border-color: #a94442;
+}
+/* Button */
+.btn-primary {
+    background-color: #009bc9;
+    border-color: #009ac7;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+    z-index: 3;
+    color: #fff;
+    cursor: default;
+    background-color: #009bc9;
+    border-color: #009ac7;
+}
+/* Table */
+.table > tbody > tr > td.prevent-white-space {
+	white-space: pre-wrap;
+}
+.table > thead > tr > th, .table > tbody > tr.header-row {
+	background-color: #009ac7;
+    color: white;
+}
+.table > tbody > tr > td.selectable:hover {
+	background: #dbdbdb;
+}
+.table > tbody > tr > td.selectable.selected:hover {
+	background: #009ac7;
+}
+.table > tbody > tr.selected > td.selectable:hover {
+	background: #009ac7;
+}
+table.dataTable tbody>tr.selected, table.dataTable tbody>tr>.selected {
+    background-color: #006487;
+}
+/* Text Underline */
+.text-highlight {
+	background-color: #f5f5f5;
+	color: #333333;
+	border: 1px solid #cccccc;
+	line-height: 14px;
+	padding: 2px 4px;
+  	-webkit-border-radius: 3px;
+       -moz-border-radius: 3px;
+            border-radius: 3px;
+}
+
+td.col-text-preview {
+    font-size: x-large;
+}
+
+td.col-text-preview > span.text-preview {
+	background-color: #f5f5f5;
+	color: #333333;
+	border: 1px solid #cccccc;
+	line-height: 14px;
+}
+
+td > [data-field="startValue"] {
+	width: 100% !important;
+}
+td > [data-field="length"] {
+	width: 100% !important;
+}
+td > [data-field="prefix"] {
+	width: 100% !important;
+}
+/* Message Modal */
+#modal-body-content {
+	line-height: 2;
+}
+
+/* Loader */
+.loader {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	margin-left: auto;
+	margin-right: auto;
+	z-index: 9000;
+	border: 8px solid #f3f3f3;
+	border-radius: 50%;
+	border-top: 8px solid #3498db;
+	width: 50px;
+	height: 50px;
+	-webkit-animation: spin 1s linear infinite; /* Safari */
+	animation: spin 1s linear infinite;
+}
+
+.backdrop {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	z-index: 1040;
+	background-color: #000;
+}
+
+.backdrop.fade {
+	filter: alpha(opacity = 0);
+	opacity: 0;
+}
+
+.backdrop.in {
+	filter: alpha(opacity = 50);
+	opacity: .5;
+}
+/* Button */
