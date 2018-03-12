@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+   xmlns:th="http://www.thymeleaf.org"
+   xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+   xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+   <head>
+      <title>This is header.</title>
+      <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
+      
+      <!-- Bootstrap 3.3.7 -->
+      <link rel="stylesheet" href="/asset/vendors/AdminLTE-2.4.3/bower_components/bootstrap/dist/css/bootstrap.min.css">
+      
+      <!-- Font Awesome -->
+      <link rel="stylesheet" href="/asset/vendors/AdminLTE-2.4.3/bower_components/font-awesome/css/font-awesome.min.css">
+      
+      <!-- Theme style -->
+      <link rel="stylesheet" href="/asset/vendors/AdminLTE-2.4.3/css/AdminLTE.min.css">
+      <link rel="stylesheet" href="/asset/vendors/AdminLTE-2.4.3/css/skins/_all-skins.min.css">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700,300italic,400italic,600italic">
+   		
+      <script type="text/javascript" src="asset/vendors/AdminLTE-2.4.3/bower_components/jquery/dist/jquery.min.js"></script>
+      <script type="text/javascript" src="asset/vendors/AdminLTE-2.4.3/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="asset/vendors/AdminLTE-2.4.3/js/adminlte.min.js"></script>
+   </head>
+   <body class="hold-transition skin-blue sidebar-mini">
+      <div class="wrapper">
+         <header class="main-header" >
+            
+            <!-- Logo -->
+            <a href="index2.html" class="logo">
+               <!-- mini logo for sidebar mini 50x50 pixels -->
+               <span class="logo-mini"><b>A</b>LT</span> <!-- logo for regular state and mobile devices -->
+               <span class="logo-lg"><b>Admin</b>LTE</span>
+            </a>
+            
+            <!-- Header Navbar: style can be found in header.less -->
+            <nav class="navbar navbar-static-top">
+               <!-- Sidebar toggle button-->
+               <a href="#" class="sidebar-toggle" data-toggle="push-menu"
+                  role="button"> <span class="sr-only">Toggle navigation</span>
+               </a>
+               <div class="navbar-custom-menu">
+                  <ul class="nav navbar-nav">
+                     <li><a href="#control-sidebar-settings-tab" data-toggle="tab"><i class="fa fa-gears"></i></a></li>
+                  </ul>
+               </div>
+            </nav>
+         </header>
+         <aside class="main-sidebar" layout:insert="~{/common/fragments/menu-admin-lte :: menu}"></aside>
+         <div class="content-wrapper">
+            <div layout:fragment="content"></div>
+         </div>
+      </div>
+   </body>
+</html>
